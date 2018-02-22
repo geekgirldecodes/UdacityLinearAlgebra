@@ -1,5 +1,5 @@
 # File : vector.py
-# Implements vector operations, supports v_sum(), v_diff(), s_product()
+# Implements vector operations, supports add(), subtract(), scalar_multiply()
 
 
 class Vector(object):
