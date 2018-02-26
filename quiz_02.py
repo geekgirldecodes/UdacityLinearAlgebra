@@ -1,9 +1,8 @@
 from vector import Vector
 
 # Quiz 02.
-# Direction and magnitude
+# Direction and magnitude 
 # of a vector
-# Author : @geekgirldecodes
 
 def main():
     # test magnitude 01
