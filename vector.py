@@ -1,6 +1,9 @@
 # File : vector.py
-# Implements vector operations, supports add(), subtract(), scalar_multiply()
-
+# Supports various vector operations
+# Linear algebra library implemented as part of 
+# Udacity Linear Algebra Refresher course.
+# Refer : https://classroom.udacity.com/courses/ud953
+# Author : @geekgirldecodes
 
 class Vector(object):
     def __init__(self, coordinates):
@@ -22,6 +25,12 @@ class Vector(object):
     def __eq__(self, v):
         return self.coordinates == v.coordinates
 
+###########################
+# quiz 01
+# Add , Subtract and
+# Scalar multiplication
+###########################  
+
     def add(self,v):
         # Find the sum of two vectors 
         # using zip() takes two equal length collections and
@@ -41,3 +50,28 @@ class Vector(object):
         s_prod = [s*x for x in self.coordinates]
         return Vector(s_prod)
 
+    
+###########################
+# quiz 02
+# Magnitude and direction
+###########################
+
+    def magnitude(self):
+        # Finds magnitude of the given vector
+        # magnitude(V) = sqrt(V1^2 +V2^2 + ...Vn^2)
+        v_mag = 0
+        for x in self.coordinates:
+            print x
+            v_mag = x**2+v_mag #** is operator for : raised to the power of
+        return (v_mag**0.5)
+
+
+    def direction(self):
+        # Finds direction of the given vector
+        # diection(V) = 1/magnitude(V) * V
+        s = (1/self.magnitude())
+        v_dir = self.scalar_multiply(s)
+        return v_dir
+        
+        
+        
