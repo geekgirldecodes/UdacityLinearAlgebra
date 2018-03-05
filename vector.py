@@ -95,7 +95,7 @@ class Vector(object):
 
     def dot_product(self,v):
         # Compute the inner product between
-        # two vetcors
+        # two vectors
         return sum([x*y for x,y in zip(self.coordinates, v.coordinates)])
             
     def angle_between(self,v, in_degree=False):
