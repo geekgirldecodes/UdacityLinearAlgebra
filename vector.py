@@ -83,7 +83,7 @@ class Vector(object):
 ###########################
 # quiz 03
 # Inner/Dot Product and
-# angle
+# angle between vectors
 ###########################        
 
     def normalize(self):
